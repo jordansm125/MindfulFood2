@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,25 +10,29 @@
     <!-- See https://goo.gl/OOhYW5 -->
     <link rel="manifest" href="/manifest.json">
     <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <!-- Displays google form-->
-   <!-- <script type="module" src="/src/interface-1.js"></script> -->
-   <!-- Google Sign In error: https://stackoverflow.com/questions/36020374/google-permission-denied-to-generate-login-hint-for-target-domain-not-on-localh-->
-   <!-- used CREDS2 (access to local host/website) instead of test2projcred.json (under other)-->
-   	<meta name="google-signin-client_id" content="592342589650-0focan8eqntpbj4t77vgcatplvbrfr2u.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+    <!-- Displays google form from interface-1.js file-->
+    	<script type="module" src="/src/interface-1.js"></script>
 
+    <script src="./src/parsing.js"></script>
+
+	<img src="http://www.tcgreenmedia.com/wp-content/uploads/2014/07/google-developers-v01-510x380.png", width = 350, height = 300>
+
+	<script type="module" src="/src/interface-1.js"></script>
+   
     <!-- Library to d3-->
 	<script src='https://d3js.org/d3.v4.min.js'></script>
-	<!-- Parses and extracts image Urls from csv of user image data -->
-	<!--<script src="/src/parsing.js"></script> -->
+	<!--<script src="./src/parsing.js"></script>-->
 	
+
+		
   </head>
   <body>
-    <interface-1>
-		<div class="g-signin2" data-onsuccess="onSignIn"></div>
-		<!-- Gains user access token and downloads images -->
-   		<script src = "/src/GooglePhotosAlbumAccess.py"></script>
-    </interface-1>
+  	<interface-1>
+
+		<!--Test Image Display-->
+		<img src="http://www.tcgreenmedia.com/wp-content/uploads/2014/07/google-developers-v01-510x380.png", width = 350, height = 300>
+	</interface-1>
   </body>
 </html>
 
