@@ -10,29 +10,42 @@
     <!-- See https://goo.gl/OOhYW5 -->
     <link rel="manifest" href="/manifest.json">
     <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    
+  
+    <!--<img src="http://www.tcgreenmedia.com/wp-content/uploads/2014/07/google-developers-v01-510x380.png", width = 350, height = 300>-->
+
     <!-- Displays google form from interface-1.js file-->
-    	<script type="module" src="/src/interface-1.js"></script>
-
-    <script src="./src/parsing.js"></script>
-
-	<img src="http://www.tcgreenmedia.com/wp-content/uploads/2014/07/google-developers-v01-510x380.png", width = 350, height = 300>
-
-	<script type="module" src="/src/interface-1.js"></script>
+    <!--<script type="module" src="/src/interface-1.js"></script>-->
+    
+       <!-- <div id = 'imageLocation'> -->
+    	<!--java script when pull up image the location
+    		document.getelementbyid.imagelocaiton. inner html (write html line <img>)-->
    
-    <!-- Library to d3-->
-	<script src='https://d3js.org/d3.v4.min.js'></script>
+    
+	<!--<script src='https://d3js.org/d3.v4.min.js'></script>-->
 	<!--<script src="./src/parsing.js"></script>-->
-	
-
 		
   </head>
   <body>
-  	<interface-1>
-
+  	<interface-1></interface-1>
 		<!--Test Image Display-->
-		<img src="http://www.tcgreenmedia.com/wp-content/uploads/2014/07/google-developers-v01-510x380.png", width = 350, height = 300>
-	</interface-1>
+		<!--<img src="http://www.tcgreenmedia.com/wp-content/uploads/2014/07/google-developers-v01-510x380.png", width = 350, height = 300>-->
+
+		<!--Direct insert of Google Form-->
+		<!--<iframe id="surveyFrame" src="https://goo.gl/forms/gHPzIFzEFSN8CTjE2" width=1260 height="2250" frameborder="0" marginheight="0" marginwidth="150" style="background: #FFFFFF;">Loading...</iframe>-->
+
+			    
+   	<div id = "imageLocation">
+    	<!-- Library to d3-->
+    	<script src='https://d3js.org/d3.v4.min.js'></script>
+    	<!-- Script that parses user image data to get image URLs-->
+    	<script src="./src/parsing.js"></script>
+    </div> 
+    
+	<div id = "form">
+		<script src="./src/preFilledUrl.js"></script> 
+    </div>
+    
+    
   </body>
 </html>
 
